@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+<h1>Student Management System</h1>
+<h2>Add Student</h2>
+
+
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+<label>Age:</label>
+<input type="number" id="age">
+
+<br><br>
+
+<label>Grade:</label>
+<input type="number" id="grade">
+
+<br><br>
+
+<button onclick="addStudent()">Add Student</button>
+
+<h2>Search Student</h2>
+
+<input type="text" id="search" placeholder="Search by name">
+<button onclick="searchStudent()">Search</button>
+
+<h2>Students</h2>
+<table border="1">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Actionns</th>
+    </tr>
+</thead>
+<tbody id="student"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+
+    </body>
+</html>
